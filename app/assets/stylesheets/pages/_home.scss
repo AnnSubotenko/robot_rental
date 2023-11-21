@@ -1,15 +1,18 @@
 // Specific CSS for your home-page
-
-body {
+.background-image {
   background-image: url('https://cdn.plainconcepts.com/wp-content/uploads/2021/10/Spot-Boston-Dynamics-robot.jpg');
   background-size: cover;
-  background-position: inherit;
-  background-repeat: inherit;
-  height: 700px;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.sign-up-button {
+  width: 200px !important;
 }
 
 .info {
   color: white;
-  padding: 20px;
-  margin: 30px;
+  padding: 40px;
 }
