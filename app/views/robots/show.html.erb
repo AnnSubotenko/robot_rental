@@ -1,4 +1,10 @@
 <h1> Hey this is a very gud Robot:</h1>
 <p><%= @robot.overview %></p>
 <p>Do you want to book this robot?</p>
+
 <%= link_to "Book this bad boy", new_robot_booking_path(@robot) %>
+
+<% @robot.bookings.each do |booking| %>
+
+  <h3><%= link_to "Add a review for booking #{booking.id}", new_robot_booking_review_path(@robot,booking)  %></h3>
+<% end %>
