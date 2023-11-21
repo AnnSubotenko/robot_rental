@@ -4,6 +4,8 @@ class RobotsController < ApplicationController
   end
 
   def show
-    #Franz
+    @robot = Robot.find(params[:id])
+    # @reviews = Bookings(gefiltered).review
+    # Bookings und Reviews finden
   end
 end
