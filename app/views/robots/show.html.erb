@@ -13,7 +13,7 @@
       </div>
       <p><strong>Owner: </strong><%= @robot.user_id %></p>
       <p>Do you want to rent this robot?</p>
-      <%= button_to "Rent this bad boy", new_robot_booking_path(@robot), class: "btn btn-primary" %>
+      <%= link_to "Rent this bad boy", new_robot_booking_path(@robot), class: "btn btn-primary" %>
     </div>
   </div>
   <div class="container mt-5">
