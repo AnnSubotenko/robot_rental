@@ -1,4 +1,4 @@
 class Review < ApplicationRecord
   belongs_to :booking
-  belongs_to :robot, through: :bookings
+  has_one :robot, through: :bookings
 end
