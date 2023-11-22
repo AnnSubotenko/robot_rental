@@ -1,7 +1,20 @@
-<h1>Here you can book this bad boi.</h1>
-<p><%= @robot.model %></p>
+<div class="container">
+  <div class="class"></div>
+    <h1>Here you can book this bad boy.</h1>
+    <div class="row">
 
-<%= simple_form_for [ @robot, @booking ] do |f| %>
-  <%= f.input :comment %>
-  <%= f.submit "Book it now", class: "btn btn-primary" %>
-<% end %>
+      <div class="col">
+        <%= @robot.model %>
+        <%= @robot.overview %>
+        <%= @robot.price %>
+        <%= @robot.rating %>
+        <img src=@robot.image_url alt="Robot-picture">
+      <%# render image %>
+      </div>
+
+      <div class="col"></div>
+        <%= render "shared/form_booking", robot: @robot, booking: @booking%>
+      </div>
+    </div>
+  </div>
+</div>

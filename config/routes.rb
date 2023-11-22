@@ -4,9 +4,11 @@ Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   resources :robots do
-    resources :bookings, only: [ :new, :create ] do
-      resources :reviews, only: [ :new, :create ]
-    end
+    resources :bookings, only: [ :new, :create ]
+  end
+
+  resources :bookings, only: [] do
+    resources :reviews, only: [ :new, :create ]
   end
 
 
