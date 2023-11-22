@@ -1,17 +1,15 @@
 
+.background-container-form {
+  background-color: white;
 
-.new-booking-container {
-  background-image: url('https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-  background-size: contain;
-  background-repeat: repeat;
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
+
 }
 
 .coloring {
   background-color: white;
+  box-shadow: 0 0 10px rgba(128, 128, 128, 0.311);
 }
+
 
 .img-properties-form {
   object-fit: contain;
@@ -28,4 +26,5 @@
 
 .font-form {
   font-family: "JetBrains Mono", "monospace";
+  color: black
 }
