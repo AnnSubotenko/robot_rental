@@ -1,0 +1,5 @@
+  <%= simple_form_for [ robot, booking ] do |f| %>
+    <%= f.input :activity, collection: ["Gardening 🧑‍🌾", "Pet-like buddy 🦮", "Robot Dance Party Extravaganza 🕺", "Hilarious Joke-telling Robot Stand-up 🧑‍🎤"] %>
+    <%= f.input :comment %>
+    <%= f.submit "Book it now", class: "btn bg-dark text-white" %>
+  <% end %>
