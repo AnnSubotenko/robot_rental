@@ -15,8 +15,16 @@
   </head>
 
   <body>
-    <%#= render "shared/navbar" %>
     <%= render "shared/flashes" %>
-    <%= yield %>
+
+    <% if params[:controller] == "pages" && params[:action] == "home"  %>
+      <%= nil %>
+      <% else %>
+      <%= render "shared/navbar" %>
+    <% end %>
+    <div class="container p-4">
+      <%= yield %>
+    </div>
+
   </body>
 </html>
