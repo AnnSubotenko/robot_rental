@@ -1,12 +1,43 @@
+
 .navbar-lewagon {
   justify-content: space-between;
+  padding: 10px; // Adjust the desired padding
+  margin-bottom: 20px; // Adjust the desired margin
   background: white;
+  padding:0px;
 }
 
 .navbar-lewagon .navbar-collapse {
   flex-grow: 0;
 }
 
+.navbar{
+  padding:0 !important;
+}
+
 .navbar-lewagon .navbar-brand img {
-  width: 40px;
+}
+
+.navbar-brand {
+  img{
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.navbar_container {
+  border: black;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+.navbar-expand-sm {
+  // Add styles for navbar-expand-sm if needed
+}
+
+.navbar-light {
+  // Add styles for navbar-light if needed
+}
+
+.navbar-lewagon {
+  // Add styles for navbar-lewagon if needed
 }
