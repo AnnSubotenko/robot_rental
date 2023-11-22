@@ -1,4 +1,13 @@
-// Import page-specific CSS files here.
+// Import page-specific CSS files here. Index is considered the parent page of all scss files.
 @import "home";
+@import "show";
 @import "login";
-@import "password";
+
+.robot-card {
+  img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+  }
+}
+

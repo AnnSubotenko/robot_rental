@@ -5,8 +5,13 @@ Rails.application.routes.draw do
 
   resources :robots do
     resources :bookings, only: [ :new, :create ]
-    #Franz (it's berny) -> routes for bookings
   end
+
+  resources :bookings, only: [] do
+    resources :reviews, only: [ :new, :create ]
+  end
+
+
 
 
   # resources :bookmarks, only: [ :new, :create, :destroy]
