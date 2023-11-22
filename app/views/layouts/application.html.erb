@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html style="background-color: black">
+<html>
   <head>
     <title>RobotRental</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -15,10 +15,16 @@
   </head>
 
   <body>
-    <%#= render "shared/navbar" %>
     <%= render "shared/flashes" %>
+
+    <% if params[:controller] == "pages" && params[:action] == "home"  %>
+      <%= nil %>
+      <% else %>
+      <%= render "shared/navbar" %>
+    <% end %>
     <div class="container p-4">
       <%= yield %>
     </div>
+    
   </body>
 </html>
