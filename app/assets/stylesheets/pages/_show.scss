@@ -1,0 +1,26 @@
+// Specific CSS for your home-page
+.show-page-container {
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.review-card {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-top: 16px;
+  border-top: 1px solid lightgray;
+}
+
+.review-timestamp {
+  color: gray;
+}
+
+.robot-hero-image{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.robot-info{
+  justify-content: space-between;
+}
