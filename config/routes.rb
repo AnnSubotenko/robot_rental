@@ -4,15 +4,12 @@ Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   resources :robots do
-    resources :bookings, only: [ :new, :create ]
+    resources :bookings, only: [ :new, :create, :show ]
   end
 
   resources :bookings, only: [] do
     resources :reviews, only: [ :new, :create ]
   end
-
-
-
 
   # resources :bookmarks, only: [ :new, :create, :destroy]
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
