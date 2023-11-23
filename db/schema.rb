@@ -37,7 +37,7 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_22_113245) do
     t.string "model"
     t.float "price"
     t.float "rating"
-    t.string "image_url"
+    t.text "image_urls", default: [], array: true
     t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
