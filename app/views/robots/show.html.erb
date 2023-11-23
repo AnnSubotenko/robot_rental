@@ -31,14 +31,28 @@
       <%= link_to "Rent this bad boy", new_robot_booking_path(@robot), class: "btn btn-dark mb-3" %>
     </div>
   </div>
+  <div class="container mt-5">
+    <h2>Reviews about <%= @robot.model %></h2>
+    <div class="review-card mt-5">
+      <p><strong><a href="https://de.wikipedia.org/wiki/Mustermann">Max Mustermann</strong></a> said:</p>
+      <p>Super gud Robot that helps me get into Berghain<br>
+      <em class="review-timestamp">2 days ago</em></p>
+    </div>
+    <div class="review-card">
+      <p><strong><a href="https://de.wikipedia.org/wiki/Mustermann">Erika Schmidt</strong></a> said:</p>
+      <p>Does backflips and shit! Amazing. Would recommend!!!<br>
+      <em class="review-timestamp">2 months ago</em></p>
+    </div>
+    <div class="review-card">
+      <p><strong><a href="https://de.wikipedia.org/wiki/Mustermann">Max Mustermann</strong></a> said:</p>
+      <p>Does the dishes, etc. Wird nie µde, schläft nie ein. <br>I sent him to the gym and he didn't gain any weight, which is weird. Doesn't come with a handbook...<br>
+      <em class="review-timestamp">9 months ago</em></p>
+    </div>
+  </div>
+</div>
 
 
-<!-- Slider main container -->
-
-
-
-
-
+    <!-- Slider main container -->
 
     <%# HERE, I TRIED MYSELF WITH THE BOOTSTRAP CAROUSEL BUT COULDN'T GET IT TO WORK: %>
 
@@ -68,4 +82,3 @@
         <span class="sr-only">Next</span>
       </a>
     </div> %>
-  </div>
