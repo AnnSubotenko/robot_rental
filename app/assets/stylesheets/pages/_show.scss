@@ -28,6 +28,8 @@
 
 .robot-info{
   justify-content: space-between;
+  padding: 0 50px;
+  // help! Want to give the info some breating space to the left
 }
 
 .splide__slide {
@@ -37,4 +39,8 @@
   justify-content: center;
   align-items: center;
   font-size: 24px;
+}
+
+.btn-dark{
+  font-family: "JetBrains Mono", "monospace";
 }
