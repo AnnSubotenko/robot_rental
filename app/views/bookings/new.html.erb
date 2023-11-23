@@ -4,17 +4,15 @@
 
         <div class="col-lg-7 m-3 p-4 rounded border coloring">
           <div class="d-flex justify-content-between align-items-center">
-
-            <div>
-              <h2> Robot specs </h2>
-              <p> Model: <%= @robot.model %></p>
-              <p> Overview <%= @robot.overview %></p>
-              <p> Price: <%= @robot.price %></p>
-              <p> Rating: <%= @robot.rating %></p>
-            </div>
-
             <div>
               <img class="img-properties-form" src="<%= @robot.image_urls.first%>" alt="Robot-picture">
+            </div>
+            <div>
+              <h2> Robot Specs </h2>
+              <p> Model: <%= @robot.model %></p>
+              <p> Overview: <%= @robot.overview %></p>
+              <p> Price: <%= @robot.price %></p>
+              <p> Rating: <%= @robot.rating %></p>
             </div>
           </div>
         </div>
@@ -23,7 +21,7 @@
         </div> %>
 
         <div class="col-lg-7 m-3 p-4 rounded border coloring">
-          <h2> Book your bad boy here </h2>
+          <h2> Book your bad boy here: </h2>
           <%= render "shared/form_booking", robot: @robot, booking: @booking%>
         </div>
       </div>

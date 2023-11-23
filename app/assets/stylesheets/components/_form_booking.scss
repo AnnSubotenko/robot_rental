@@ -1,11 +1,16 @@
 
 .background-container-form {
   background-color: white;
+  margin-top:100px !important;
+}
+
+.new-booking-container {
+  margin-top:100px !important;
 }
 
 .coloring {
   background-color: white;
-  box-shadow: 0 0 10px rgba(128, 128, 128, 0.311);
+  box-shadow: 0 0 10px rgba(128, 128, 128, 0.30);
 }
 
 
@@ -14,6 +19,7 @@
   height: 150px;
   width: 150px;
   border-radius: 50%;
+  margin: 30px 30px;
 }
 
 .dimension {
