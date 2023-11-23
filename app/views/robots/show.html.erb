@@ -1,25 +1,25 @@
 
 <div class="show-page-container container p-4 mt-4 mb-4">
   <div class="container d-flex pb-4">
-    <div class="container image-container p-0">
+    <div class="container image-container p-0 rounded">
 
-<div  class="splide" data-controller="splide" >
-<div  class="splide__track">
-  <!-- Additional required wrapper -->
-  <ul class="splide__list">
+      <div  class="splide" data-controller="splide" >
+      <div  class="splide__track">
+        <!-- Additional required wrapper -->
+        <ul class="splide__list">
 
-    <% @robot.image_urls.each do |robot_image| %>
-         <li class="splide__slide">
-            <img class="w-100" src=" <%=  robot_image%>">
-        </li>
-    <% end %>
-    </ul>
-  </div>
-</div>
+          <% @robot.image_urls.each do |robot_image| %>
+              <li class="splide__slide">
+                  <img class="w-100" src=" <%=  robot_image%>">
+              </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
 
 
     </div>
-    <div class="robot-info container">
+    <div class="robot-info container" style="padding: 0 50px">
       <h1><%= @robot.model %></h1>
       <p><%= @robot.overview %></p>
       <div class="price-container">
