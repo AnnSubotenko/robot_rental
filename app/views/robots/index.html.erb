@@ -12,7 +12,7 @@
               <p class="card-text"><%= robot.overview %></p>
               <p class="card-text">Price: $<%= number_with_precision(robot.price, precision: 2) %></p>
               <p class="card-text">Rating: <%= robot.rating %></p>
-              <button type="button" class="btn btn-dark w-100 mb-3"><%= link_to 'See Robot', robot_path(robot), style: "color: white; text-decoration: none" %></button>
+              <%= link_to 'See Robot', robot_path(robot), class: "btn btn-dark w-100 mb-3" %>
             </div>
           </div>
         </div>
