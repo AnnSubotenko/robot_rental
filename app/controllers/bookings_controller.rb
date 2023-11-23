@@ -24,7 +24,7 @@ class BookingsController < ApplicationController
 
   def booking_params
     # strong params
-    params.require(:booking).permit(:comment)
+    params.require(:booking).permit(:comment, :activity)
   end
 
   def define_robot
