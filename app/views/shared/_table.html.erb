@@ -1,5 +1,5 @@
-<table class="styled-table">
-    <thead>
+<table class="styled-table mt-4">
+    <thead class="border-bottom p-2">
         <tr>
             <th>#id</th>
             <th>Activity</th>
@@ -10,7 +10,7 @@
     </thead>
     <tbody>
       <% user_bookings.each do |b| %>
-        <tr>
+        <tr class="border-bottom p-2">
             <td><%= b.id %></td>
             <td><%= b.activity %></td>
             <td><%= b.comment %></td>

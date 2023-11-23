@@ -9,6 +9,7 @@ table {
 th {
   font-weight: bold; /* Make the header text bold */
   background-color: white; /* Set the background color of the header cells */
+  border-bottom: 2px solid #ccc; /* Add a bottom border to the header cells */
 }
 
 /* Style for table rows (tr) */
