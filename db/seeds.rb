@@ -10,6 +10,7 @@
 Robot.destroy_all
 
 puts "Seeding..."
+
 santi = User.create(email: "santi.is.awesome@gmail.com", password: "123456")
 
 Robot.create!(overview: "Advanced robotic quadruped with exceptional mobility", model: "Spot", price: "85.00", rating: "4.5", image_urls: ["https://media.discordapp.net/attachments/1153611072486518845/1177204959599677510/franzsheep_Create_an_illustration_of_Wall-E_the_adorable_waste-_4fc8ffba-97c9-49a3-ac12-3b011356c83a.png?ex=6571a88d&is=655f338d&hm=85af2205e3fc0dd77e9857e1f4e1405eec0f6b492ec5527d6b94dff6a8fc34bf&=&format=webp&width=1632&height=1632", "https://media.discordapp.net/attachments/1153611072486518845/1177205237388410910/franzsheep_Create_an_illustration_of_HAL_9000_the_sentient_robo_5a2c969d-0ad6-409a-935d-fb97ae9a8f68.png?ex=6571a8d0&is=655f33d0&hm=2710571b51e226e30508173f898f9356ca18d9560de3717b30d15b8b3f2fbc1b&=&format=webp&width=1632&height=1632"], user: santi)
@@ -31,4 +32,5 @@ Robot.create!(overview: "Humanoid robot with enhanced agility and dexterity", mo
 Robot.create!(overview:"Android designed for human assistance and companionship", model:"Bishop", price:"110.00", rating:"4.3", image_urls:["https://media.discordapp.net/attachments/1153611072486518845/1177205187761426453/franzsheep_Generate_an_image_of_Robbie_the_friendly_cleaning_ro_67c95dd8-e5a6-4145-9bc5-d00d3e9df85f.png?ex=6571a8c4&is=655f33c4&hm=feffe284012d3291c321fae44bee6e4a2b83884765be443b942624634bb98fd5&=&format=webp&width=1632&height=1632", "https://media.discordapp.net/attachments/1153611072486518845/1177205600959070218/franzsheep_Create_an_image_of_Chappie_the_AI-driven_robot_expre_206e032b-06c2-4609-9040-d6df27d9332c.png?ex=6571a926&is=655f3426&hm=cf5f81bff179cc0e2ea55deb7ee403f3808581ff65f5384bc7ece70c1492fbc1&=&format=webp&width=1632&height=1632"] , user: santi)
 
 Robot.create!(overview: "Autonomous robot for inspection and data collection", model: "Handle XL", price: "130.00", rating: "4.6", image_urls: ["https://media.discordapp.net/attachments/1153611072486518845/1177205564409917501/franzsheep_Generate_an_image_of_Robbie_the_friendly_cleaning_ro_c78cf442-d443-43e8-a38d-4442a9b919b5.png?ex=6571a91d&is=655f341d&hm=bf57aee9e6c23b71fb88858caece696c7e67370199f801f37bef01662cc0e86d&=&format=webp&width=1632&height=1632", "https://media.discordapp.net/attachments/1153611072486518845/1177205342598352907/franzsheep_Design_a_visual_representation_of_Danger_Will_Robins_02d6d54e-7eda-4284-8bbd-2eb65a3d45a4.png?ex=6571a8e9&is=655f33e9&hm=8cef61ce8cc39f366058081ab836e3fd123264bae511b6fae0407d1bfb01e4bc&=&format=webp&width=1632&height=1632"] , user: santi)
+
 puts "Executed all Robot Seedings"
