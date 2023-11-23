@@ -1,5 +1,5 @@
 class BookingsController < ApplicationController
-  before_action :define_robot, only: [ :new, :create ]
+  before_action :define_robot, only: %i[new create show]
   def new
     @booking = Booking.new
   end
@@ -11,10 +11,13 @@ class BookingsController < ApplicationController
 
     # raise
     if @booking.save
-      redirect_to robot_path(@robot)
+      redirect_to robot_booking_path(@booking.robot_id, @booking), notice: 'You successfully booked a robot!'
     else
       render :new
     end
+  end
+
+  def show
   end
 
   private

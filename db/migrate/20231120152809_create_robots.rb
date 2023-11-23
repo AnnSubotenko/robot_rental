@@ -5,7 +5,7 @@ class CreateRobots < ActiveRecord::Migration[7.1]
       t.string :model
       t.float :price
       t.float :rating
-      t.string :image_url
+      t.text :image_urls, array: true, default: []
       t.integer :user_id
 
       t.timestamps

@@ -4,6 +4,11 @@
   width: 100vw;
 }
 
+.container {
+    margin-top:100px !important;
+
+}
+
 .review-card {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -23,4 +28,19 @@
 
 .robot-info{
   justify-content: space-between;
+  padding: 0 50px;
+  // help! Want to give the info some breating space to the left
+}
+
+.splide__slide {
+  height: 500px;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+.btn-dark{
+  font-family: "JetBrains Mono", "monospace";
 }
