@@ -11,7 +11,7 @@ Rails.application.routes.draw do
     resources :reviews, only: [ :new, :create ]
   end
 
-
+  get "/dashboard", to: "pages#dashboard"
 
 
   # resources :bookmarks, only: [ :new, :create, :destroy]

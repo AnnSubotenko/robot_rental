@@ -1,0 +1,71 @@
+<%# <div class="container">
+  <div class="row">
+    <div class="col-lg-6 layout-db-1 style-db">
+      <p>hellooooooo</p>
+    </div>
+
+    <div class="col-lg-6 layout-db-1 style-db">
+       <p>hellooooooo</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12 layout-db-2 style-db">
+       <p>hellooooooo</p>
+    </div>
+
+     <div class="col-lg-12 layout-db-2 style-db">
+       <p>hellooooooo</p>
+    </div>
+  </div>
+
+</div> %>
+
+
+<div class="container font-db">
+  <div class="first-wrapper">
+
+    <div class="style-db layout-db-1">
+      <div class="container d-flex align-items-center justify-content-between">
+        <div>
+          <h1>Your infos</h1>
+            <% if user_signed_in? %>
+            <p class="border-bottom p-2">First name: <%= current_user.first_name %></p>
+            <p class="border-bottom p-2">Last name: <%= current_user.last_name %></p>
+            <p class="border-bottom p-2">Email: <%= current_user.email %></p>
+            <% end %>
+            <a href="<%= dashboard_path %>" class="btn btn-dark text-white w-100 mt-2" style="text-decoration: none;">
+            Edit profile
+            </a>
+        </div>
+        <div>
+          <img class="icon-db" src="https://static-00.iconduck.com/assets.00/robot-icon-2048x2048-s4gzvofh.png" alt="icon-user">
+        </div>
+      </div>
+    </div>
+
+    <div class="style-db layout-db-1">
+      <h1>Activity</h1>
+        <%# add some counting mechanics %>
+    </div>
+
+  </div>
+
+  <div class="second-wrapper">
+
+    <div class="style-db layout-db-2">
+      <h1>Your bookings</h1>
+      <%= render "shared/table", user_bookings: @user_bookings %>
+
+    </div>
+
+    <div class="style-db layout-db-2">
+      <h1>Your robots</h1>
+        <% @user_bookings.each do |booking| %>
+          <p class="border-bottom p-2"><%= booking.comment %></p>
+        <% end %>
+      <%# create robots form %>
+    </div>
+
+  </div>
+</div>
