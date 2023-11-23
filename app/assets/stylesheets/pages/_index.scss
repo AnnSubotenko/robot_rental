@@ -6,8 +6,8 @@
 .robot-card {
   img {
     width: 100%;
-    max-height: 200px;
+    max-height: 250px;
     object-fit: cover;
+    object-position: top; // This makes the cards show the "face" of the robots
   }
 }
-
