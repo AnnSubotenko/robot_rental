@@ -31,14 +31,13 @@
     <div class="container mt-5">
       <h2>Reviews about <%= @robot.model %></h2>
       <p>Average rating: <%= @robot.rating %></p>
-        <% @robot.reviews.each do |review| %>
-          <div class="review-card mt-5">
-            <p><strong><a href=""><%= review.booking.user.first_name %> <%= review.booking.user.last_name %></strong></a> said:</p>
-            <p><%= review.content %><br>
-            <em class="review-timestamp">2 days ago</em></p>
-          </div>
-        <% end %>
-
+      <% @robot.reviews.each do |review| %>
+        <div class="review-card mt-5">
+          <p><strong><a href=""><%= review.booking.user.first_name %> <%= review.booking.user.last_name %></strong></a> said:</p>
+          <p><%= review.content %><br>
+          <em class="review-timestamp">2 days ago</em></p>
+        </div>
+      <% end %>
       <div class="review-card mt-5">
         <p><strong><a href="https://de.wikipedia.org/wiki/Mustermann">Max Mustermann</strong></a> said:</p>
         <p>Super gud Robot that helps me get into Berghain<br>
