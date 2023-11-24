@@ -16,11 +16,13 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_22_113245) do
 
   create_table "bookings", force: :cascade do |t|
     t.bigint "robot_id", null: false
+    t.bigint "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "comment"
     t.string "activity"
     t.index ["robot_id"], name: "index_bookings_on_robot_id"
+    t.index ["user_id"], name: "index_bookings_on_user_id"
   end
 
   create_table "reviews", force: :cascade do |t|
@@ -58,5 +60,6 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_22_113245) do
   end
 
   add_foreign_key "bookings", "robots"
+  add_foreign_key "bookings", "users"
   add_foreign_key "reviews", "bookings"
 end
