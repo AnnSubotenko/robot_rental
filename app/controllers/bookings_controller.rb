@@ -6,12 +6,14 @@ class BookingsController < ApplicationController
 
   def create
     @booking = Booking.new(booking_params)
-    @booking.robot_id = @robot.id
+    @booking.robot = @robot
+    @booking.user = current_user
     # @booking.robot[id] = @robot[id]
 
-    # raise
+    
     if @booking.save
-      redirect_to robot_booking_path(@booking.robot_id, @booking), notice: 'You successfully booked a robot!'
+      #redirect_to robot_booking_path(@booking.robot_id, @booking), notice: 'You successfully booked a robot!'
+      redirect_to new_robot_booking_path(@robot), notice: "You successfully booked this robot!"
     else
       render :new
     end
