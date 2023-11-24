@@ -5,7 +5,7 @@ class PagesController < ApplicationController
   end
 
   def dashboard
-    @user_bookings = Booking.where(params[:current_user])
-    # select robots booked
+    @user_bookings = current_user.bookings
+    @user_robots = current_user.robots
   end
 end
