@@ -4,7 +4,7 @@
       <div class="col-lg-7 m-3 p-4 rounded border coloring">
         <div class="d-flex justify-content-between align-items-center">
           <div>
-            <h2>Robot specs</h2>
+            <h1>Robot specs</h1>
             <p>Model: <%= @robot.model %></p>
             <p>Overview: <%= @robot.overview %></p>
             <p>Price: <%= @robot.price %></p>
@@ -29,14 +29,14 @@
                 <p><strong>Robot Model:</strong> <%= @robot.model %></p>
                 <p></p>
                 <p><%= notice %></p>
-                <%= link_to 'Back to Robots', robots_path %>
+                <p><%= link_to 'Browse more Robots', robots_path, class: "btn btn-dark mb-3" %>            <%= link_to 'See my bookings', dashboard_path, class: "btn rounded border btn-light mb-3" %></p>
               </div>
             </div>
           </div>
         </div>
       </div>
     <% end %>
-    
+
         <div class="col-lg-7 m-3 p-4 rounded border coloring">
           <h2> Book your bad boy here: </h2>
           <%= render "shared/form_booking", robot: @robot, booking: @booking%>
