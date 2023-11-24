@@ -25,12 +25,10 @@
             <h2>10</h2>
             <p>Active bookings</p>
           </div>
-
           <div class="style-activity-db">
             <h2>3</h2>
             <p>Robots owned</p>
           </div>
-
           <div class="style-activity-db">
             <h2 style="color: green">$0</h2>
             <p>Earned</p>
@@ -41,13 +39,10 @@
             <p>Spent</p>
           </div>
         </div>
-
     </div>
-
   </div>
 
-  <div class="second-wrapper">
-
+  <div>
     <div class="style-db layout-db-2">
       <h1>Your Bookings</h1>
       <%= render "shared/table_bookings", user_bookings: @user_bookings %>
@@ -55,8 +50,6 @@
       <a href="<%= robots_path %>" class="btn btn-dark text-white mt-5" style="text-decoration: none;">
         + Book Another Robot
       </a>
-
-
     </div>
 
     <div class="style-db layout-db-2">
