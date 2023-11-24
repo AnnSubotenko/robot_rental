@@ -10,8 +10,8 @@ eagerLoadControllersFrom("controllers", application)
 // import { lazyLoadControllersFrom } from "@hotwired/stimulus-loading"
 // lazyLoadControllersFrom("controllers", application)
 
-import SplideController from './splide_controller';
-application.register('splide', SplideController);
+// import SplideController from './splide_controller';
+// application.register('splide', SplideController);
 
 // app/javascript/controllers/index.js
 
@@ -20,4 +20,3 @@ application.register('splide', SplideController);
 
 // const application = Application.start();
 // application.register("carousel", Carousel)
-
