@@ -1,0 +1,6 @@
+
+<%= simple_form_for [ @booking, @review ] do |f| %>
+  <%= f.input :content, placeholder: "Type something..." %>
+  <%= f.input :rating, placeholder: "Rate this bad boy..." %>
+  <%= f.submit "Save Review", class: "btn bg-dark text-white", data: {action: "click->fake-modal#activateSuccess"}  %>
+<% end %>
