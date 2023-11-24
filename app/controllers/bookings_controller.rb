@@ -10,7 +10,7 @@ class BookingsController < ApplicationController
     @booking.user = current_user
     # @booking.robot[id] = @robot[id]
 
-    
+
     if @booking.save
       #redirect_to robot_booking_path(@booking.robot_id, @booking), notice: 'You successfully booked a robot!'
       redirect_to new_robot_booking_path(@robot), notice: "You successfully booked this robot!"
