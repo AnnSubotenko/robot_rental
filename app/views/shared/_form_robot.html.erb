@@ -3,5 +3,6 @@
   <%= f.input :model, placeholder: "Type model..." %>
   <%= f.input :overview, placeholder: "Really good boy..." %>
   <%= f.input :price, placeholder: "Daily rate" %>
+  <%= f.input :photos, as: :file, input_html: { multiple: true } %>
   <%= f.submit "Add to my Garage", class: "btn bg-dark text-white" %>
 <% end %>
