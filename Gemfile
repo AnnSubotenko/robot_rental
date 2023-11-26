@@ -80,4 +80,5 @@ end
 # Devise user
 gem "devise"
 
+gem "cloudinary"
 
