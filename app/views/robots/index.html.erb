@@ -5,8 +5,11 @@
       <% @robots.each do |robot| %>
         <div class="col-4 d-flex mt-5">
           <div class="card mb-4 flex-fill robot-card">
+            <% if robot.photos.attached? %>
+              <%= cl_image_tag robot.photos.first.key, height: 300, crop: :fill  %>
+            <% else %>
             <img class="card-img-top img-fluid" src="<%= robot.image_urls.first %>">
-
+            <% end %>
             <div class="card-body vh-50">
               <h3 class="card-title"><%= robot.model %></h3>
               <p class="card-text"><%= robot.overview %></p>

@@ -5,11 +5,19 @@
         <div class="splide__track">
             <!-- Additional required wrapper -->
           <ul class="splide__list">
+            <% if @robot.photos.attached? %>
+              <% @robot.photos.each do |photo| %>
+                <li class="splide__slide">
+                    <%= cl_image_tag photo.key, class: "w-100 h-100"%>
+                </li>
+              <% end %>
+          <% else %>
             <% @robot.image_urls.each do |robot_image| %>
               <li class="splide__slide">
               <img class="w-100" src="<%= robot_image %>">
               </li>
             <% end %>
+          <% end %>
           </ul>
         </div>
       </div>
